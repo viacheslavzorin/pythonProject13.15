@@ -28,3 +28,10 @@ def test_long_name():
 
     with pytest.raises(Exception):
         assert item7.long_name("aaaaaaaaaaa")
+def test_repr():
+    item5 = Item('sos', 30, 6)
+    assert  item5.__repr__() == "Item('sos', '30', '6,)"
+
+def test_str():
+    item6 = Item('kkk', 80, 33)
+    assert item6.__str__() == "kkk"

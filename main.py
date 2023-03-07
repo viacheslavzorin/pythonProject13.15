@@ -30,3 +30,9 @@ item.long_name = 'СуперСмартфон'
 print(Item.is_integer(5))
 print(Item.is_integer(5.0))
 print(Item.is_integer(5.5))
+if __name__ == '__main__':
+    item1 = Item("Смартфон", 10000, 20)
+    print(item1)
+#item1 = Item("Смартфон", 10000, 20)
+item1
+print(item1)
